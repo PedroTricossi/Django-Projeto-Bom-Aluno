@@ -10,4 +10,5 @@ urlpatterns = [
 
     # Local apps
     path('', include('pages.urls')),
+    path('student/', include('students.urls'))
 ]

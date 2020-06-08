@@ -27,7 +27,8 @@ INSTALLED_APPS = [
 
     #local apps
     'users.apps.UsersConfig',
-    'pages.apps.PagesConfig'
+    'pages.apps.PagesConfig',
+    'students.apps.StudentsConfig',
 ]
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
