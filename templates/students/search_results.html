@@ -1,0 +1,14 @@
+{% extends '_base.html' %}
+
+{% block title %}Search{% endblock title %}
+
+{% block content %}
+<h1>Search Results</h1>
+
+{% for student in student_list %}
+    <div>
+      <h3><a href="{{ student.get_absolute_url }}">{{ student.name }}</a></h3>
+      <p>Author: {{ student.course }}</p>
+    </div>
+  {% endfor %}
+{% endblock content %}
