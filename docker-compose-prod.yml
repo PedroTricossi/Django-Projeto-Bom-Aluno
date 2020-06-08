@@ -7,19 +7,12 @@ services:
     environment:
       - ENVIRONMENT=development
       - SECRET_KEY=p_o3vp1rg5)t^lxm9-43%0)s-=1qpeq%o7gfq+e4#*!t+_ev82
-      - DEBUG=1      
-    volumes:
-      - .:/code
+      - DEBUG=0    
     ports:
       - 8000:8000
     depends_on:
       - db
   db:
     image: postgres:11
-    volumes:
-      - postgres_data:/var/lib/postgresql/data/
     environment:
       - "POSTGRES_HOST_AUTH_METHOD=trust"
-
-volumes:
-  postgres_data:
