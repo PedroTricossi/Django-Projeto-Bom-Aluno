@@ -16,9 +16,11 @@ class Student(models.Model):
 
     course = models.CharField(max_length=200)
 
+    face = models.ImageField(upload_to='students_face/', blank=True) 
+
     def __str__(self):
         return self.name
 
     def get_absolute_url(self):
-        return reverse('student_detail', args=[str(self.id)])
+        return reverse('student_detail', kwargs={'pk': str(self.pk)})
 

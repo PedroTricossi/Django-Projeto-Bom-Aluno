@@ -11,4 +11,4 @@ class StudentListView(ListView):
 class StudentDetailView(DetailView):
     model = Student
     context_object_name = 'student'
-    template_name = 'students/student_detail.html'
+    template_name = 'students/srudent_detail.html'

@@ -4,6 +4,11 @@
 
 {% block content %}
 <div class="student-detail">
+  {% if student.face %}
+    <img class="student_face" src="{{ student.face.url}}" alt="{{ student.name }}">
+  {% endif %}
+  
+
   <h2><a href="">{{ student.name }}</a></h2>
   <p>Author: {{ student.institution }}</p>
   <p>Price: {{ student.course }}</p>
