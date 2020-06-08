@@ -2,14 +2,14 @@ setup:
   addons:
   - plan: heroku-postgresql
     as: DATABASE
-  build:
-    docker:
-      web: Dockerfile
-  release:
-    image: web
-    command:
-      - python manage.py collectstatic --noinput
-  run:
-    web: gunicorn projetoBomAluno.wsgi
+build:
+  docker:
+    web: Dockerfile
+release:
+  image: web
+  command:
+    - python manage.py collectstatic --noinput
+run:
+  web: gunicorn projetoBomAluno.wsgi
 
     
