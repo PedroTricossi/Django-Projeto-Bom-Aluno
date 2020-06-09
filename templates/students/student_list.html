@@ -4,8 +4,15 @@
 
 {% block content %}
   {% for student in student_list %}
-    <div>
-      <h2><a href="{{ student.get_absolute_url }}">{{ student.name }}</a></h2>
+    <div class="card" style="width: 22rem;">
+      <img class="card-img-top" src="{{ student.face.url }}">
+      <div class="card-body">
+        <h5 class="card-title"><a href="{{ student.get_absolute_url }}">{{ student.name }}</a></h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
     </div>
   {% endfor %}
+
+
 {% endblock content %}
