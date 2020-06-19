@@ -1,5 +1,6 @@
 # Projeto-Bom-Aluno
 
+![Alt text](./static/images/site.png?raw=true "Title")
 
 ## Why I created it?
 This project was created to say thank you to Bom Aluno. The project that changed my life giving the chance to study in one of the best school in Curitiba, and gave all the phycological help need to continue in this way, as well as teaching the soft skill that id helping me to be a good professional.
