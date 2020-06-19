@@ -8,7 +8,7 @@ This project was created to say thank you to Bom Aluno. The project that changed
 ## What is the objective?
 The objective of this project is to be a kind of LinkedIn for our graduate students, but not just the companies find them, younger students that do not know what should apply too. In the future, the object is to use the website as a blog too, to show the world the activities and projects that are world are doing.
 
-##Technologies used:
+## Technologies used:
 - Django(backend)
 - Postgreesql(database)
 - Bootstrap 4 and javascript(frontend)
